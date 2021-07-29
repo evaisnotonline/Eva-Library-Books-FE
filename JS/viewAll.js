@@ -5,6 +5,12 @@
     const updateTitle = document.querySelector("#updateTitle");
     const updateAuthor = document.querySelector("#updateAuthor");
     const updatePublisher = document.querySelector("#updatePublisher");
+
+    const resetUpdate = () => {
+        updateTitle.value='';
+        updateAuthor.value='';
+        updatePublisher.value='';
+    }
    
     const data1 = {
         id: 0,
@@ -88,13 +94,14 @@ const renderBook = (book, outputDiv) => {
         title: updateTitle.value,
         publisher: updatePublisher.value
         }
-        location.reload();
+        
         axios.put(`${baseURL}/updateBook/${data1.id}`, data)
-            .then(() => {location.reload();
+            .then(() => {
             }).catch(err => console.log(err));
-
-            location.reload();
             getAllBooks();
+            resetUpdate();
+            location.reload();
+            
         }
     )
 const deleteBook = id => {
