@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="byIdTheme.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Book</title>
+    <link href="images/bookIcon.jpg" rel="shortcut icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        form>input {
+            display: block;
+        }
+
+               body {
+  background-image: url('images/peace.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%100%;
+}
+
+div.row {
+    position: relative;
+    top : 30%;
+    left: 50%;
+    width:35%;
+    height:10%;
+}
+
+input[type="number"] {
+             position: relative;
+             display: block;
+             margin : 0 auto;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <main class="row">
+        <section class="col-9">
+            <h2 id="aTitle">Find a Book</h2>
+            <section id="getByIdSection">
+                <div id="buttoning">
+                    <a id="buttoning" href="http://127.0.0.1:5500/EvaLibrary/Index.html">Back to Home</a>
+                  </div>
+                  <div id="tagging">
+                <i>Looking for the next great book in your life? <br> Enter a random number and see what you get...</i>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="number" name="bookId" id="bookId" class="form-control col-10" min="1">
+                    <button id="getByIdButton" class="btn btn-primary col-2">GET</button>
+                </div>
+                <div id="getByIdOutput">
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="JS/byId.js"></script>
+</body>
+
+</html>
