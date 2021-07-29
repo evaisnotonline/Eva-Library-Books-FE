@@ -1,0 +1,34 @@
+#buttoning {
+    text-align: center;
+    background: #755f5f; 
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    width: 10%;
+    margin-bottom: 3%;
+}
+
+#tagging {
+    background-color: azure;
+    font-size: 28pt;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: -25%;
+}
+
+#aTitle {
+    margin-right: -50%;
+    margin-top: 1%;
+    font-size: 50pt;
+    text-align: center;
+    font-family: Lucida Handwriting;
+}
+
+#getByIdSection {
+    text-align: center;
+}
+
+
+
